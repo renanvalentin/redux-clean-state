@@ -1,10 +1,11 @@
 {
   "name": "redux-clean-state",
   "version": "1.0.0",
-  "description": "An high order component to clean your app state on componentWillUnmount",
+  "description": "A higher order component to clean your app state on componentWillUnmount",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --plugins transform-react-jsx --presets babel-preset-es2015 --out-dir dist" 
   },
   "keywords": [
     "redux",
@@ -20,6 +21,7 @@
     "babel-preset-es2015": "^6.9.0",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
+    "react": "^15.1.0",
     "sinon": "^1.17.4",
     "skin-deep": "^0.16.0"
   }
