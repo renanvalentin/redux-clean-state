@@ -1,6 +1,6 @@
 {
   "name": "redux-clean-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A higher order component to clean your app state on componentWillUnmount",
   "main": "dist/index.js",
   "scripts": {
