@@ -4,8 +4,8 @@
   "description": "A higher order component to clean your app state on componentWillUnmount",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --plugins transform-react-jsx --presets babel-preset-es2015 --out-dir dist" 
+    "test": "mocha --compilers js:babel-register --require ./tests/test_helper.js tests/**/*.js",
+    "build": "babel src --plugins transform-react-jsx --presets babel-preset-es2015 --out-dir dist"
   },
   "keywords": [
     "redux",
@@ -17,12 +17,18 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
     "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
     "chai": "^3.5.0",
+    "jsdom": "^9.2.1",
     "mocha": "^2.5.3",
     "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
     "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
     "skin-deep": "^0.16.0"
   }
 }

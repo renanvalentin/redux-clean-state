@@ -1,11 +1,11 @@
 import React from 'react';
 
+import sinon from 'sinon';
+import {expect} from 'chai';
+
 import sd from 'skin-deep';
 
-import equalJSX from 'chai-equal-jsx';
-chai.use(equalJSX);
-
-import ComposeClearAppState from 'components/composes/ComposeClearAppState';
+import ComposeClearAppState from '../src/index.js';
 
 describe('(Components/Composes) ComposeClearAppState', () => {
   describe('Rendering', () => {
